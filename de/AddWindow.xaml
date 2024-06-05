@@ -1,0 +1,30 @@
+﻿<Window x:Class="de.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:de"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="600" Width="400">
+    <Grid>
+        <StackPanel >
+            <Label Content="Добавление заявки" HorizontalAlignment="Center" FontSize="18"/>
+            <Label Content="Дата" HorizontalAlignment="Left"/>
+            <DatePicker Name="Data"  />
+            <Label Content="Оборудование" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="cbEquip"/>
+            <Label Content="Тип неисправности" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="cbTypeMaif"/>
+            <Label Content="Проблема" HorizontalAlignment="Left"/>
+            <TextBox x:Name="tbProblem"/>
+            <Label Content="Клиент" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="cbClient"/>
+            <Label Content="Статус" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="cbStage"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnAdd" Content="Добавить" Margin="0 20 20 0" Click="btnAdd_Click" />
+                <Button x:Name="btnCancel" Content="Отмена"  Margin="0 20 0 0" Click="btnCancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
